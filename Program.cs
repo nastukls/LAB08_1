@@ -41,7 +41,6 @@ department.AddEmployee(m1);
 
 department.PrintEmployees();
 
-department.AddEmployee(w1);
 Console.WriteLine(department.AddEmployee(w1));
 
 
