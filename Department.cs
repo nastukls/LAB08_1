@@ -19,6 +19,10 @@ namespace LAB08_1
             {
                 return false;
             }
+            if (employee is Manager && CountManagers() >= 1)
+            {
+                return false;
+            }
             foreach (Employee emp in employees)
             {
                 if (emp.ID == employee.ID)
@@ -26,6 +30,7 @@ namespace LAB08_1
                     return false;
                 }
             }
+            
             employees.Add(employee);
             return true;
         }

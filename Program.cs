@@ -40,7 +40,7 @@ department.AddEmployee(p2);
 department.AddEmployee(m1);
 
 department.PrintEmployees();
-
+ 
 Console.WriteLine(department.AddEmployee(w1));
 
 
@@ -70,9 +70,9 @@ department.PrintEmployees();
 Console.WriteLine($"Total employees:{ department.CountEmployees()}");
 Console.WriteLine($"Average salary:{ department.CalculateAverageSalary()}");
 
-Department emptyDepartment = new Department("Empty Department");
+Department newdepartment = new Department("Buhgalteria");
 
-Console.WriteLine($"Total employees: {emptyDepartment.CountEmployees()}");
-Console.WriteLine($"Average salary: {emptyDepartment.CalculateAverageSalary()}");
-Console.WriteLine($"Highest paid: {emptyDepartment.FindHighestPaidEmployee()}");
-Console.WriteLine($"Lowest paid: {emptyDepartment.FindLowestPaidEmployee()}");
+newdepartment.AddEmployee(w1);
+newdepartment.AddEmployee(w2);
+
+Console.WriteLine($"Total employees: {newdepartment.CountEmployees()}");
